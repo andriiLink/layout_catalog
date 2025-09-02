@@ -53,11 +53,9 @@ $horizontal-paddings: 40px;
   padding-bottom: 16px;
   border: 1px solid $card-border-clr;
 
-  transition: transform 0.3s;
-
-  &:hover {
-    transform: scale(1.2);
-  }
+  transition:
+    transform 0.3s,
+    color 0.3s;
 
   &__img {
     box-sizing: border-box;
@@ -82,8 +80,11 @@ $horizontal-paddings: 40px;
     margin-bottom: 4px;
 
     transition: color 0.3s;
+  }
 
-    &:hover {
+  &:hover {
+    transform: scale(1.2);
+    .card__title {
       color: $card-title-hover-clr;
     }
   }
