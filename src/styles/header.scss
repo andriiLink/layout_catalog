@@ -1,9 +1,6 @@
-$nav-link-text-color: #060b35;
 $header-inline-paddings: 50px;
-
-html {
-  --main-color: #00acdc;
-}
+$nav-default-clr: #060b35;
+$main-color: #00acdc;
 
 header {
   display: flex;
@@ -49,20 +46,21 @@ header {
 
   font-family: Roboto, Arial, serif;
   font-weight: 500;
-  color: $nav-link-text-color;
+  color: $nav-default-clr;
   text-decoration: none;
+
+  transition: color 0.3s;
 }
 
 .nav__link:hover {
   font-weight: 500;
-  color: var(--main-color);
+  color: $main-color;
   text-decoration: none;
-  transition-duration: 0.3s;
 }
 
 .nav__link.nav__link.is-active {
   position: relative;
-  color: var(--main-color);
+  color: $main-color;
 }
 
 .nav__link.is-active::after {
@@ -76,5 +74,5 @@ header {
   height: 4px;
   border-radius: 8px;
 
-  background: var(--main-color);
+  background: $main-color;
 }
